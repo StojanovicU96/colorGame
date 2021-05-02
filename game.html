@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Game Color</title>
+</head>
+<body>
+    <div id="rgb-title-section">
+        <h4>The great</h4>
+        <h1>RGB(<span id="R"></span>, <span id="G"></span>, <span id="B"></span>)</h1>
+        <h4 id="exception">Guessing game</h4>
+    </div>
+    <div id="game-mode-section">
+        <button class="game-mode" id="newGameBtn">New Game</button>
+        <button class="game-mode selected" id="hardBtn">Hard</button>
+        <button class="game-mode" id="easyBtn">Easy</button>
+    </div>  
+    <table cellspacing="0">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="second-row"></td>
+            <td class="second-row"></td>
+            <td class="second-row"></td>
+        </tr>
+    </table>
+
+    <script src="games.js"></script>
+
+</body>
+</html>
