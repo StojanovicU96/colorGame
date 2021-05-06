@@ -34,8 +34,8 @@ $("#newGameBtn").on("click",function(){
     generateColors(mode);
 });
 
-//remove square if color don not match to target color,
-//otherwise paint all squares in target color 
+//remove square if color don't match to target color,
+//otherwise paint all squares with target target color 
 $("td").on("click", function() {
     if($(this).css("background-color") === targetColor){
         $("td").css("background-color",targetColor);
@@ -70,6 +70,7 @@ function generateColors(mode) {
     }
 }
 
+//generate single color
 function generateColor() {
     var r = Math.floor(Math.random()*256);
     var g = Math.floor(Math.random()*256); 
@@ -78,6 +79,8 @@ function generateColor() {
     return "rgb("+r+", "+g+", "+b+")";
 }
 
+
+//generate target color
 function generateTargetColor() {
     var r = Math.floor(Math.random()*256);
     var g = Math.floor(Math.random()*256); 
