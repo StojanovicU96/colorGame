@@ -35,7 +35,7 @@ $("#newGameBtn").on("click",function(){
 });
 
 //remove square if color don't match to target color,
-//otherwise paint all squares with target target color 
+//otherwise paint all squares with target color 
 $("td").on("click", function() {
     if($(this).css("background-color") === targetColor){
         $("td").css("background-color",targetColor);
